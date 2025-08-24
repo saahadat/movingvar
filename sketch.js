@@ -5,7 +5,7 @@ let lineXone = 0;
 let lineYone = 0;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(1600, 720);
 }
 
 function draw() {
@@ -15,7 +15,7 @@ function draw() {
   // text(`${mouseX},${mouseY}`,20,20);
   
   fill(255);
-  text(`mouseX:${mouseX},mouseY:${mouseY}`,20,20);
+  text(`mouseX:${mouseX},mouseY:${mouseY}\nframecount:${frameCount}`,20,20);
 
   fill(255);
   stroke("navy");
@@ -29,14 +29,16 @@ function draw() {
   // fill("navy");
   // circle(320,50,100);
   
+  //hills
   stroke(0);
   fill(80);
-  triangle(-40,300, 75,100, 250,300);
-  triangle(100,300, 300,100, 500,300);
+  triangle(-40,500, 175,200, 550,500);
+  triangle(200,500, 500,50, 800,500);
 
   fill('rgb(50,76,50)');
-  rect(0,300,400,100);
+  rect(0,500,1980,720);
 
+  //clouds
   cloudOneX = frameCount % width
 
   fill(255);
@@ -47,16 +49,16 @@ function draw() {
   //growing tree
 //trunk
 fill("rgb(118,80,72)");
-rect(40, 270, 15, 50);
+rect(80, 270, 25, 350);
 //leaves
 fill("green");
-triangle(25, 270, 45, 240, 70, 270);
+triangle(20, 370, 85, 100, 170, 370);
 
 //trunk
 fill("rgb(118,80,72)");
-rect(340, 330, 15, 50);
+rect(460, 440, 23, 200);
 //leaves
 fill("green");
-triangle(325, 330, 345, 240 - frameCount % 290, 370, 330);
+triangle(350, 540, 470, 240 - frameCount % 290, 580, 540);
 
 }
