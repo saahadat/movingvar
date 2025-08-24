@@ -39,7 +39,7 @@ function draw() {
   fill(80);
   triangle(-40,500, 175,200, 550,500);
 //cloud
-stroke(255);
+stroke(180);
 fill(255);
 
   ellipse(cloudOneX - 40, 100, 60, 20);
@@ -53,7 +53,7 @@ fill(80);
 
   //clouds
   
-  stroke(255);
+  stroke(180);
   fill(255);
   ellipse(cloudOneX,50,80,40);
   
